@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7CCC8"
+    tools:context="com.example.android.bussinesscard.MainActivity">
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_gravity="top"
+        android:adjustViewBounds="true"
+        android:layout_margin="14dp"
+        android:src="@drawable/cover_logo"/>
+    
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address"
+        android:layout_below="@id/Logo"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="25dp"
+        android:fontFamily="sans-serif"
+        android:autoLink="map"
+        android:textColor="#4E342E"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_place_black_18dp"
+        android:drawableStart="@drawable/ic_place_black_18dp"
+        android:drawablePadding="14dp"/>
+
+   <TextView
+       android:id="@+id/telephone"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/telephone"
+       android:layout_below="@id/address"
+       android:layout_marginTop="18dp"
+       android:layout_marginLeft="25dp"
+       android:gravity="center"
+       android:fontFamily="sans-serif"
+       android:autoLink="phone"
+       android:textColor="#4E342E"
+       android:textColorLink="#4E342E"
+       android:textSize="14sp"
+       android:textStyle="bold"
+       android:drawableLeft="@drawable/ic_call_black_18dp"
+       android:drawablePadding="14dp" />
+
+    <TextView
+        android:id="@+id/web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/website"
+        android:layout_below="@id/telephone"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="25dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:autoLink="web"
+        android:textColor="#4E342E"
+        android:textColorLink="#4E342E"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_language_black_18dp"
+        android:drawablePadding="14dp"/>
+
+</RelativeLayout>
