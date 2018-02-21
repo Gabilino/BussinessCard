@@ -4,16 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D7CCC8"
+    android:background="@color/background"
     tools:context="com.example.android.bussinesscard.MainActivity">
+
+    <ImageView
+        android:id="@+id/tearoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:adjustViewBounds="true"
+        android:src="@drawable/priscillas_tearoom" />
+
 
     <ImageView
         android:id="@+id/Logo"
         android:layout_width="match_parent"
-        android:layout_height="260dp"
-        android:layout_gravity="top"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tearoom"
         android:adjustViewBounds="true"
-        android:layout_margin="14dp"
+        android:layout_margin="@dimen/layout_margin"
         android:src="@drawable/cover_logo"/>
     
     <TextView
@@ -22,16 +31,16 @@
         android:layout_height="wrap_content"
         android:text="@string/address"
         android:layout_below="@id/Logo"
-        android:layout_marginTop="18dp"
-        android:layout_marginLeft="25dp"
+        android:layout_marginTop="@dimen/layout_marginTop"
+        android:layout_marginLeft="@dimen/layout_marginLeft"
         android:fontFamily="sans-serif"
         android:autoLink="map"
-        android:textColor="#4E342E"
-        android:textSize="14sp"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/text_size"
         android:textStyle="bold"
         android:drawableLeft="@drawable/ic_place_black_18dp"
         android:drawableStart="@drawable/ic_place_black_18dp"
-        android:drawablePadding="14dp"/>
+        android:drawablePadding="@dimen/drawablePadding" />
 
    <TextView
        android:id="@+id/telephone"
@@ -39,17 +48,17 @@
        android:layout_height="wrap_content"
        android:text="@string/telephone"
        android:layout_below="@id/address"
-       android:layout_marginTop="18dp"
-       android:layout_marginLeft="25dp"
+       android:layout_marginTop="@dimen/layout_marginTop"
+       android:layout_marginLeft="@dimen/layout_marginLeft"
        android:gravity="center"
        android:fontFamily="sans-serif"
        android:autoLink="phone"
-       android:textColor="#4E342E"
-       android:textColorLink="#4E342E"
-       android:textSize="14sp"
+       android:textColor="@color/textColor"
+       android:textColorLink="@color/textColorLink"
+       android:textSize="@dimen/text_size"
        android:textStyle="bold"
        android:drawableLeft="@drawable/ic_call_black_18dp"
-       android:drawablePadding="14dp" />
+       android:drawablePadding="@dimen/drawablePadding" />
 
     <TextView
         android:id="@+id/web"
@@ -57,16 +66,16 @@
         android:layout_height="wrap_content"
         android:text="@string/website"
         android:layout_below="@id/telephone"
-        android:layout_marginTop="18dp"
-        android:layout_marginLeft="25dp"
+        android:layout_marginTop="@dimen/layout_marginTop"
+        android:layout_marginLeft="@dimen/layout_marginLeft"
         android:gravity="center"
         android:fontFamily="sans-serif"
         android:autoLink="web"
-        android:textColor="#4E342E"
-        android:textColorLink="#4E342E"
-        android:textSize="14sp"
+        android:textColor="@color/textColor"
+        android:textColorLink="@color/textColorLink"
+        android:textSize="@dimen/text_size"
         android:textStyle="bold"
         android:drawableLeft="@drawable/ic_language_black_18dp"
-        android:drawablePadding="14dp"/>
+        android:drawablePadding="@dimen/drawablePadding" />
 
 </RelativeLayout>
